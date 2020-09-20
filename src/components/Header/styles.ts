@@ -1,21 +1,15 @@
 import styled from "styled-components";
 
-export const Header = styled.div`
+export const Container = styled.div`
   grid-area: Header;
 
   display: flex;
   flex-direction: row;
 
   background-color: var(--bg-header);
-  width: 100vw;
+  width: 100%;
 
   align-items: center;
-`;
-
-export const Container = styled.div`
-  margin-left: 30px;
-
-  &:hover {
-    color: var(--red);
-  }
+  position: relative;
+  z-index: 3;
 `;

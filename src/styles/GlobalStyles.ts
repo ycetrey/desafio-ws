@@ -12,12 +12,20 @@ export default createGlobalStyle`
 
   html, body{
     font-family: 'Roboto', sans-serif;
+    background: #fafafa;
+    height: 100vh;
   }
 
   html, body, #root{
     height: 100%;
+    height: 100vh;
   }
 
+  .box-shadow {
+    -webkit-box-shadow: 0px 0px 8px 5px rgba(224, 224, 224, 1);
+    -moz-box-shadow: 0px 0px 8px 5px rgba(224, 224, 224, 1);
+    box-shadow: 0px 0px 8px 5px rgba(224, 224, 224, 1);
+  }
   :root {
     --bg-header: #1976d2;
     --primary: #212121;
