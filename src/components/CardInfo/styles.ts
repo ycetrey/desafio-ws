@@ -12,8 +12,10 @@ import { MdEmail } from "react-icons/md";
 
 export const Container = styled.div`
   grid-area: CardInfo;
+  display: flex;
+  flex-direction: column;
 
-  overflow: hidden;
+  height: auto;
   padding: 10px 20px;
 `;
 
@@ -57,7 +59,7 @@ export const Status = styled.div`
 `;
 
 export const Phone = styled.div`
-  margin-top: 30px;
+  margin-top: 20px;
   display: flex;
 
   align-items: center;
@@ -112,7 +114,7 @@ export const Social = styled.div`
   & a[href="#"] {
     color: var(--tertiary);
   }
-
+  padding: 10px 0;
   font-size: 20px;
 `;
 
