@@ -7,7 +7,7 @@ export const Grid = styled.div`
   grid-template-rows: 64px auto;
 
   grid-template-areas:
-    "Menu Header"
+    "Header Header"
     "Menu Content";
 
   height: 100vh;

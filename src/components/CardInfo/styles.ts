@@ -8,5 +8,5 @@ export const Container = styled.div`
 export const Title = styled.div`
   display: block;
   font-size: 25px;
-  font-weight: bold;
+  font-weight: 400;
 `;

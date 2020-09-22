@@ -14,33 +14,17 @@ export const Container = styled.div`
 
   max-height: 100vh;
   overflow-y: scroll;
-  padding-top: 64px;
   z-index: 2;
-  position: absolute;
   width: 72px;
   transition: 0.5s;
   height: calc(100vh + 64px);
 
   & > Button {
     background: none;
-  }
-  & > Button.menu {
-    height: 64px;
-    width: 100%;
-    background: var(--bg-header);
-    font-size: 24px;
-    border-radius: 0;
-    display: flex;
-    flex-shrink: 0;
-    align-items: center;
-    justify-content: left;
-    position: fixed;
-    top: 0;
-    padding-left: 26px;
-    z-index: 2;
+    cursor: pointer;
   }
 
-  & > Button:not(.menu) {
+  & > Button {
     flex-shrink: 0;
 
     color: var(--gray);
@@ -80,6 +64,11 @@ export const Container = styled.div`
       top: 16px;
       left: 24px;
       position: absolute;
+    }
+
+    &.selected {
+      color: var(--blue);
+      background: var(--tertiary);
     }
 
     &:hover {

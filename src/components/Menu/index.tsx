@@ -1,50 +1,25 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { Container } from "./styles";
 import { Button } from "antd";
-import {
-  MenuOutlined,
-  MenuFoldOutlined,
-  SearchOutlined,
-  CalendarOutlined,
-} from "@ant-design/icons";
+
+import { SearchOutlined, CalendarOutlined } from "@ant-design/icons";
 
 import { FiUser } from "react-icons/fi";
 
-const Menu: React.FC = () => {
-  const [toggleState, setToggleState] = useState(false);
+import { AiOutlineTag, AiFillAudio } from "react-icons/ai";
+import { useMenu } from "../../contexts/MenuContext";
 
-  const ToggleMenu = () => {
-    return setToggleState(!toggleState);
-  };
+const Menu: React.FC = () => {
+  const { toggleState } = useMenu();
 
   return (
     <Container className={toggleState ? "active" : ""}>
-      <Button
-        className="menu"
-        onClick={() => ToggleMenu()}
-        icon={
-          !toggleState ? (
-            <MenuOutlined
-              style={{
-                color: "#fff",
-              }}
-            />
-          ) : (
-            <MenuFoldOutlined
-              style={{
-                color: "#fff",
-              }}
-            />
-          )
-        }
-        type="text"
-      />
-
       <Button icon={<SearchOutlined />} type="text">
         Pesquisar
       </Button>
       <Button
+        className="selected"
         icon={
           <span>
             <FiUser />
@@ -57,14 +32,25 @@ const Menu: React.FC = () => {
       <Button icon={<CalendarOutlined />} type="text">
         Agenda
       </Button>
-      <Button icon={<CalendarOutlined />} type="text">
-        Agenda
+      <Button
+        icon={
+          <span>
+            <AiOutlineTag />
+          </span>
+        }
+        type="text"
+      >
+        Tag
       </Button>
-      <Button icon={<CalendarOutlined />} type="text">
-        Agenda
-      </Button>
-      <Button icon={<CalendarOutlined />} type="text">
-        Agenda
+      <Button
+        icon={
+          <span>
+            <AiFillAudio />
+          </span>
+        }
+        type="text"
+      >
+        Microfone
       </Button>
       <Button icon={<CalendarOutlined />} type="text">
         Agenda

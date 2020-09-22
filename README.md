@@ -16,10 +16,11 @@ yarn install
 yarn start
 ```
 
-# References and utilities for this project
+# References and utilities that were used in this project
 
     - ant-design
     - https://testing-library.com/docs/react-testing-library/intro
     - https://github.com/ctimmerm/axios-mock-adapter
     - https://www.conventionalcommits.org/en/v1.0.0/
     - https://ant.design/components/button/
+    - https://react-icons.github.io/react-icons/icons?name=fi

@@ -15,12 +15,15 @@ import Header from "../../components/Header";
 import Menu from "../../components/Menu";
 
 import CardInfo from "../../components/CardInfo";
+import { MenuProvider } from "../../contexts/MenuContext";
 
 const Customer: React.FC = () => {
   return (
     <Grid>
-      <Header />
-      <Menu />
+      <MenuProvider>
+        <Header />
+        <Menu />
+      </MenuProvider>
       <Content>
         <CardInfo />
         <CardLocal className="box-shadow" />
