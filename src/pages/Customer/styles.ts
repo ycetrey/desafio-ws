@@ -38,6 +38,22 @@ export const Content = styled.div`
     margin-bottom: 17px;
   }
 
+  @media only screen and (max-width: 1265px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+
+    grid-template-areas:
+      "CardInfo CardLocal"
+      "CardOportunity CardCredict"
+      "CardSales CardFinancialTitles"
+      "Activity Activity";
+
+    > div {
+      flex-shrink: 0;
+      break-inside: avoid;
+    }
+  }
+
   @media only screen and (max-width: 900px) {
     grid-template-columns: auto;
     grid-template-rows: auto;
