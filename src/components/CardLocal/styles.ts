@@ -10,14 +10,14 @@ export const Container = styled.div`
 
 export const Title = styled.h1`
   display: flex;
+  flex-direction: column;
 `;
 
 export const Map = styled.div`
   display: flex;
 
-  height: 67%;
+  height: 175px;
   width: 100%;
-  clear: both;
 `;
 
 export const MapInfo = styled.div`

@@ -28,11 +28,11 @@ export default createGlobalStyle`
   }
   
   h1{
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 400;
     margin-bottom: 10px;
   }
-  
+
   :root {
     --bg-header: #1976d2;
     --primary: #212121;

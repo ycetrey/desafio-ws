@@ -30,7 +30,7 @@ export const Content = styled.div`
 
   height: 100%;
 
-  padding: 17px;
+  padding: 27px 17px;
 
   > div {
     flex-shrink: 0;
@@ -72,11 +72,6 @@ export const Content = styled.div`
       break-inside: avoid;
     }
   }
-`;
-
-export const CardLocal = styled.div`
-  grid-area: CardLocal;
-  padding: 10px 20px;
 `;
 
 export const CardOportunity = styled.div`
