@@ -12,12 +12,11 @@ export const Container = styled.div`
   -moz-box-shadow: 5px 0px 6px 0px rgba(224, 224, 224, 1);
   box-shadow: 5px 0px 6px 0px rgba(224, 224, 224, 1);
 
-  max-height: 100vh;
   overflow-y: scroll;
   z-index: 2;
   width: 72px;
   transition: 0.5s;
-  height: calc(100vh + 64px);
+  height: 100%;
 
   & > Button {
     background: none;
@@ -45,7 +44,6 @@ export const Container = styled.div`
       justify-content: center;
       text-align: left;
       line-height: 58px;
-      border-bottom: 1px solid var(--light-gray);
     }
 
     & > span:first-child {
@@ -55,7 +53,6 @@ export const Container = styled.div`
       height: 55px;
       align-items: center;
       justify-content: center;
-      border-bottom: 1px solid var(--light-gray);
     }
 
     & > span > svg {

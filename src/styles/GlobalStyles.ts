@@ -26,6 +26,7 @@ export default createGlobalStyle`
     -moz-box-shadow: 0px 0px 8px 5px rgba(224, 224, 224, 1);
     box-shadow: 0px 0px 8px 5px rgba(224, 224, 224, 1);
   }
+  
   :root {
     --bg-header: #1976d2;
     --primary: #212121;

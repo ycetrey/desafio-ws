@@ -1,6 +1,6 @@
 import React from "react";
 
-import { useMenu } from "../../contexts/MenuContext";
+import { useMenu } from "../../hooks/MenuContext";
 
 import { Container } from "./styles";
 import { Button } from "antd";

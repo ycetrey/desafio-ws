@@ -15,7 +15,7 @@ import Header from "../../components/Header";
 import Menu from "../../components/Menu";
 
 import CardInfo from "../../components/CardInfo";
-import { MenuProvider } from "../../contexts/MenuContext";
+import { MenuProvider } from "../../hooks/MenuContext";
 
 const Customer: React.FC = () => {
   return (

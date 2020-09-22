@@ -28,7 +28,7 @@ export const Content = styled.div`
     "CardOportunity CardCredict Activity"
     "CardSales CardFinancialTitles Activity";
 
-  height: 100vh;
+  height: 100%;
 
   padding: 17px;
 

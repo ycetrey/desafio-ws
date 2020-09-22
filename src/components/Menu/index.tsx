@@ -8,7 +8,7 @@ import { SearchOutlined, CalendarOutlined } from "@ant-design/icons";
 import { FiUser } from "react-icons/fi";
 
 import { AiOutlineTag, AiFillAudio } from "react-icons/ai";
-import { useMenu } from "../../contexts/MenuContext";
+import { useMenu } from "../../hooks/MenuContext";
 
 const Menu: React.FC = () => {
   const { toggleState } = useMenu();
@@ -51,21 +51,6 @@ const Menu: React.FC = () => {
         type="text"
       >
         Microfone
-      </Button>
-      <Button icon={<CalendarOutlined />} type="text">
-        Agenda
-      </Button>
-      <Button icon={<CalendarOutlined />} type="text">
-        Agenda
-      </Button>
-      <Button icon={<CalendarOutlined />} type="text">
-        Agenda
-      </Button>
-      <Button icon={<CalendarOutlined />} type="text">
-        Agenda
-      </Button>
-      <Button icon={<CalendarOutlined />} type="text">
-        Agenda
       </Button>
     </Container>
   );
