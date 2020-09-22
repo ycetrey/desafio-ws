@@ -25,4 +25,3 @@ yarn start
     - https://ant.design/components/button/
     - https://react-icons.github.io/react-icons/icons?name=fi
 
-Google_API_KEY = AIzaSyCAzqS07uRPik2o11d5VUTGM8G7QBnYFgo
