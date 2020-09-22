@@ -27,6 +27,12 @@ export default createGlobalStyle`
     box-shadow: 0px 0px 8px 5px rgba(224, 224, 224, 1);
   }
   
+  h1{
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  
   :root {
     --bg-header: #1976d2;
     --primary: #212121;

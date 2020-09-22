@@ -20,9 +20,6 @@ export const Container = styled.div`
 export const Title = styled.h1`
   display: flex;
   flex-direction: column;
-  font-size: 25px;
-  font-weight: 400;
-  margin-bottom: 10px;
 `;
 
 export const Profile = styled.div`

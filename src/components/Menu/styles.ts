@@ -65,12 +65,12 @@ export const Container = styled.div`
 
     &.selected {
       color: var(--blue);
-      background: var(--tertiary);
+      background: var(--light-gray);
     }
 
     &:hover {
-      color: var(--bg-header);
-      background: var(--light-gray);
+      color: var(--white);
+      background: var(--tertiary);
     }
   }
 
