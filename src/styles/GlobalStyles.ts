@@ -40,6 +40,6 @@ export default createGlobalStyle`
     --blue: #1976d2;
     --orange: #ff6f00;
     --light-gray: #e0e0e0;
-    
+    --light-green: #c8e6c9;
   }
 `;

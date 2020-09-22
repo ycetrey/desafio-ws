@@ -16,7 +16,7 @@ export const Container = styled.div`
   z-index: 2;
   width: 72px;
   transition: 0.5s;
-  height: 100%;
+  height: calc(100vh - 72px);
 
   & > Button {
     background: none;
