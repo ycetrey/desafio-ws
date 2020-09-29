@@ -45,7 +45,9 @@ export default createGlobalStyle`
     --gray: #424242;
     --blue: #1976d2;
     --orange: #ff6f00;
+    --yellow: #f9a825;
     --light-gray: #e0e0e0;
     --light-green: #c8e6c9;
+    --border-activity: #b8b8b8;
   }
 `;

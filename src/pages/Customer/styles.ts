@@ -24,9 +24,9 @@ export const Content = styled.div`
   column-gap: 17px;
 
   grid-template-areas:
-    "CardInfo CardLocal Activity"
-    "CardOportunity CardCredict Activity"
-    "CardSales CardFinancialTitles Activity";
+    "CardInfo CardLocal CustomerActivity"
+    "CardOportunity CardCredict CustomerActivity"
+    "CardSales CardFinancialTitles CustomerActivity";
 
   height: 100%;
 
@@ -46,7 +46,7 @@ export const Content = styled.div`
       "CardInfo CardLocal"
       "CardOportunity CardCredict"
       "CardSales CardFinancialTitles"
-      "Activity Activity";
+      "CustomerActivity CustomerActivity";
 
     > div {
       flex-shrink: 0;
@@ -65,7 +65,7 @@ export const Content = styled.div`
       "CardCredict"
       "CardSales"
       "CardFinancialTitles"
-      "Activity";
+      "CustomerActivity";
 
     > div {
       flex-shrink: 0;
@@ -94,7 +94,7 @@ export const CardFinancialTitles = styled.div`
   padding: 10px 20px;
 `;
 
-export const Activity = styled.div`
-  grid-area: Activity;
+export const CustomerActivity = styled.div`
+  grid-area: CustomerActivity;
   padding: 10px 20px;
 `;

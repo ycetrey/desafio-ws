@@ -1,21 +1,18 @@
 import React, { useEffect, useState } from "react";
 
-import {
-  Grid,
-  Content,
-  Activity,
-  CardOportunity,
-  CardCredict,
-  CardSales,
-  CardFinancialTitles,
-} from "./styles";
+import { Grid, Content } from "./styles";
 
+import { MenuProvider } from "../../hooks/MenuContext";
 import Header from "../../components/Header";
 import Menu from "../../components/Menu";
 
 import CardInfo from "../../components/CardInfo";
 import CardLocal from "../../components/CardLocal";
-import { MenuProvider } from "../../hooks/MenuContext";
+import CardOportunity from "../../components/CardOportunity";
+import CustomerActivity from "../../components/CustomerActivity";
+import CardCredict from "../../components/CardCredict";
+import CardFinancialTitles from "../../components/CardFinancialTitles";
+import CardSales from "../../components/CardSales";
 
 import { loadMapApi } from "../../utils/GoogleMapsUtils";
 
@@ -44,13 +41,13 @@ const Customer: React.FC = () => {
           />
         )}
 
-        <CardOportunity className="box-shadow" />
-        <CardCredict className="box-shadow" />
+        <CardOportunity />
+        <CardCredict />
 
-        <CardSales className="box-shadow" />
-        <CardFinancialTitles className="box-shadow" />
+        <CardSales />
+        <CardFinancialTitles />
 
-        <Activity className="box-shadow" />
+        <CustomerActivity />
       </Content>
     </Grid>
   );
